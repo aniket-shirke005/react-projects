@@ -29,11 +29,11 @@ DEBUG = True
 # BASE_URL = ""
 
 # Dev
-DEV_URL_DJANGO = "http://127.0.0.1:8000"
+DEV_URL_DJANGO = "http://localhost:8000"
 DEV_URL_REACT = "http://localhost:3000"
 BASE_URL = DEV_URL_REACT
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["localhost","http://localhost"]
 
 
 # Application definition
@@ -154,7 +154,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # CORS
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-    BASE_URL,
+    'http://localhost:3000',
 )
